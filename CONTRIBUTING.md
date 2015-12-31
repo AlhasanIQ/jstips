@@ -1,12 +1,10 @@
-# Send your tip
-Every day one tip will be merged and you can spend yours. Make a pull request with the correct format.
+## #1 - String to Number transformation
+> date 12/31/2015 by @alhasaniq
 
-# Tip format
+When you want to convert a string to a number ( Integer / Flaot )
 
-## #1(number) - Title
-> date mm/dd/yyyy by @username
+Use ` "1234" *1 ` instead of ` Number( "1234" ) ` or ` parseInt( "1234" ) ` or ` parseFloat( "1234" ) ` .. why ? :
 
-Remember that your tip content must be readable in less than 2 minutes, you can add link to other sites or videos if you consider.
-You should let empty the date and the tip number, when we decide merge de PR you will add it and squash your commits.
+1. you wont have to worry about the number type (int/float)
 
-New tips must be added to the end of the list of [tips](https://github.com/loverajoel/jstips#tips-list).
+2. it is slightly faster ( dont believe me ? ask [jsperf](http://jsperf.com/string-to-integer-transformation) ). 
